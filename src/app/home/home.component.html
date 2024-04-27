@@ -15,6 +15,15 @@
       <div class="text-center">
         <h2>Featured Projects</h2>
         <h4>{{project.name}}</h4>
+
+        <carousel>
+          <div *ngFor="let image of project.pictures">
+            <slide><img src={{image}} style="display: block; width: 100%;" alt="slide"></slide>
+          </div>
+        </carousel>
+
+        <p class="mt-2">{{project.summary}}</p>
+        <p class="mt-2">View more in Portfolio section!</p>
       </div>
     </div>
   </div>
