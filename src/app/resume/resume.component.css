@@ -1,0 +1,42 @@
+accordion-group::ng-deep .btn-link{
+  color: white;
+}
+
+accordion-group::ng-deep .card-header{
+  background-color: #003566;
+}
+
+.company-name{
+  color: #003566;
+}
+
+.periodo-container {
+  text-align: right;
+  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+}
+
+.left-content {
+  grid-column: 1 / span 1; /* Ocupa la primera columna */
+  grid-row: 1 / span 1; /* Ocupa la primera fila */
+  text-align: left;
+}
+
+.left-content-bottom {
+  grid-column: 1 / span 2; /* Ocupa dos columnas */
+  grid-row: 2 / span 1; /* Ocupa la segunda fila */
+}
+
+.right-content {
+  grid-column: 2 / span 1; /* Ocupa la segunda columna */
+  grid-row: 1 / span 1; /* Ocupa la primera fila */
+  text-align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+

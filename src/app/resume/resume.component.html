@@ -1,1 +1,143 @@
-<p>resume works!</p>
+<div class="container text-center">
+  <button class="btn btn-primary mb-5 shadow border" style="background-color: #042950;" (click)="DownloadCv()">Download my CV</button>
+
+  <div class="pb-2">
+    <accordion class="shadow" [isAnimated]="true">
+      <accordion-group [(isOpen)]="isWorkExperienceOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;"></div>
+
+          <div class="btn-link">Work Experience</div>
+
+          <div style="width: 10.95px;">
+            <div style="color: white;" *ngIf="!isWorkExperienceOpen">></div>
+            <div style="color: white;" *ngIf="isWorkExperienceOpen">v</div>
+          </div>
+        </button>
+
+        <div class="d-flex justify-content-between align-items-start" style="text-align: left;">
+          <div class="grid-container">
+            <div class="left-content">
+              <h2 class="mb-0">Translator</h2>
+              <h3 class="company-name">Kronen</h3>
+            </div>
+            <div class="right-content">
+              <div class="periodo-container">
+                <h4>2023 May. - 2023 jun.</h4>
+              </div>
+            </div>
+            <div class="left-content-bottom">
+              <ul>
+                <li>Provided translation services three times for a Netherlands-based company engaged in manufacturing and marketing fire trucks, particularly during negotiations.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="d-flex justify-content-between align-items-start" style="text-align: left;">
+          <div class="grid-container">
+            <div class="left-content">
+              <h2 class="mb-0">Salesman</h2>
+              <h3 class="company-name">San-e-cel(eCommerce)</h3>
+            </div>
+            <div class="right-content">
+              <div class="periodo-container">
+                <h4>2022-2023</h4>
+              </div>
+            </div>
+            <div class="left-content-bottom">
+              <ul>
+                <li>Proposed a business model to sell our products physically in stores and participated in the development of this model as the person in charge of seeking clients/business partners interested in being part of it, working together with three other people.</li>
+                <li>Products purchasing and providers payment.</li>
+                <li>Quality customer service.</li>
+                <li>Managing customer returns and complaints.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+
+    <accordion class="shadow" [isAnimated]="true">
+      <accordion-group [(isOpen)]="isEducOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;"></div>
+
+          <div class="btn-link">Education</div>
+
+          <div class="width: 10.95px">
+            <div style="color: white;" *ngIf="!isEducOpen">></div>
+            <div style="color: white;" *ngIf="isEducOpen">v</div>
+          </div>
+        </button>
+
+        <div class="d-flex justify-content-between align-items-start" style="text-align: left;">
+          <div class="grid-container">
+            <div class="left-content">
+              <h2 class="mb-0">Universidad Abierta Interamericana(UAI)</h2>
+              <h3 class="company-name">Systems Engineering</h3>
+            </div>
+            <div class="right-content">
+              <div class="periodo-container">
+                <h4>2021-Present</h4>
+              </div>
+            </div>
+            <div class="left-content-bottom">
+              <ul>
+                <li>Relevant courses: Data Structures and Algorithms, Design Patterns, System Design, Database Design, Programming with C# (LinQ, Entity Framework), Python, and Java.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+
+    <accordion class="shadow" [isAnimated]="true">
+      <accordion-group [(isOpen)]="isSkillsOpen">
+        <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+          <div style="visibility: hidden;"></div>
+
+          <div class="btn-link">Skills</div>
+
+          <div class="width: 10.95px">
+            <div style="color: white;" *ngIf="!isSkillsOpen">></div>
+            <div style="color: white;" *ngIf="isSkillsOpen">v</div>
+          </div>
+        </button>
+
+        <div class="row" style="text-align: left;">
+          <div class="col">
+            <h3 style="text-align: center;">Progamming Languages</h3>
+            <ul>
+              <li>Java</li>
+              <li>C#</li>
+              <li>Python</li>
+              <li>TypeScript</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 style="text-align: center;">Frameworks</h3>
+            <ul>
+              <li>Angular</li>
+              <li>ASP.NET</li>
+              <li>Spring Boot</li>
+              <li>FastAPI</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3 style="text-align: center;">Others</h3>
+            <ul>
+              <li>Linux</li>
+              <li>RESTful API development</li>
+              <li>MVC Architecture</li>
+              <li>Source Control via Git</li>
+              <li>Agile development</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
